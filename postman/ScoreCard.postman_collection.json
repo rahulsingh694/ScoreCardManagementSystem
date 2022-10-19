@@ -1,0 +1,526 @@
+{
+	"info": {
+		"_postman_id": "012b0c35-1eac-4602-b7b5-5baf19aa8b8f",
+		"name": "ScoreCard",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22715585"
+	},
+	"item": [
+		{
+			"name": "Over",
+			"item": [
+				{
+					"name": "Get -Over",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}/api/over?overId=1",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"api",
+								"over"
+							],
+							"query": [
+								{
+									"key": "overId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post -Over",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"overNumber\": 12,\r\n    \"matchId\": 1,\r\n    \"inning\": \"first inning\",\r\n    \"run\": 20,\r\n    \"wicket\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}/api/over",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"api",
+								"over"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put -Over",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"overId\": 1,\r\n    \"overNumber\": 1,\r\n    \"matchId\": 1,\r\n    \"inning\": \"first inning\",\r\n    \"run\": 20,\r\n    \"wicket\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}/api/over?overId=1",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"api",
+								"over"
+							],
+							"query": [
+								{
+									"key": "overId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete -Over",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}/api/over?overId=7",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"api",
+								"over"
+							],
+							"query": [
+								{
+									"key": "overId",
+									"value": "7"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get -AllOver",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}/api/over/list",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"api",
+								"over",
+								"list"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Player",
+			"item": [
+				{
+					"name": "Get-Player",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}/api/player?playerId=1",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"api",
+								"player"
+							],
+							"query": [
+								{
+									"key": "playerId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post-Player",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"playerName\": \"Virat\",\r\n    \"playerTeam\": \"India\",\r\n    \"playerCountry\": \"India\",\r\n    \"playerAge\": 33,\r\n    \"playerType\": \"Batsman\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}/api/player",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"api",
+								"player"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put-Player",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"playerId\": 7,\r\n    \"playerName\": \"SKY\",\r\n    \"playerTeam\": \"India\",\r\n    \"playerCountry\": \"India\",\r\n    \"playerAge\": 36,\r\n    \"playerType\": \"Batsman\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}/api/player?playerId=1",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"api",
+								"player"
+							],
+							"query": [
+								{
+									"key": "playerId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete-Player",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}/api/player?playerId=7",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"api",
+								"player"
+							],
+							"query": [
+								{
+									"key": "playerId",
+									"value": "7"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get -AllPlayer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}/api/player/list",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"api",
+								"player",
+								"list"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Team",
+			"item": [
+				{
+					"name": "Get -Team",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}/api/team?teamId=1",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"api",
+								"team"
+							],
+							"query": [
+								{
+									"key": "teamId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post -Team",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"teamId\": 11,\r\n    \"teamName\": \"India\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}/api/team",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"api",
+								"team"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put -Team",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"teamId\": 11,\r\n    \"teamName\": \"USA\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{endpoint}}/api/team?teamId=11",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"api",
+								"team"
+							],
+							"query": [
+								{
+									"key": "teamId",
+									"value": "11"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete -Team",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}/api/team?teamId=11",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"api",
+								"team"
+							],
+							"query": [
+								{
+									"key": "teamId",
+									"value": "11"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get -AllTeam",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}/api/team/list",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"api",
+								"team",
+								"list"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tournament",
+			"item": [
+				{
+					"name": "Get -Tournament",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}/api/tournament?tournamentId=1",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"api",
+								"tournament"
+							],
+							"query": [
+								{
+									"key": "tournamentId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post-Tournament",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}/api/tournament",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"api",
+								"tournament"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put -Tournament",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}/api/tournament?tournamentId=2",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"api",
+								"tournament"
+							],
+							"query": [
+								{
+									"key": "tournamentId",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete -Tournament",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}/api/tournament?tournamentId=3",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"api",
+								"tournament"
+							],
+							"query": [
+								{
+									"key": "tournamentId",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get -AllTournament",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{endpoint}}/api/tournament/list",
+							"host": [
+								"{{endpoint}}"
+							],
+							"path": [
+								"api",
+								"tournament",
+								"list"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "endpoint",
+			"value": "https://localhost:7191"
+		}
+	]
+}

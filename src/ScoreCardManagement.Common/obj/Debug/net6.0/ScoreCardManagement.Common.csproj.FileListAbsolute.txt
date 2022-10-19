@@ -1,0 +1,14 @@
+D:\ScoreCardManagementSystem\src\ScoreCardManagement.Common\bin\Debug\net6.0\ScoreCardManagement.Common.deps.json
+D:\ScoreCardManagementSystem\src\ScoreCardManagement.Common\bin\Debug\net6.0\ScoreCardManagement.Common.runtimeconfig.json
+D:\ScoreCardManagementSystem\src\ScoreCardManagement.Common\bin\Debug\net6.0\ScoreCardManagement.Common.dll
+D:\ScoreCardManagementSystem\src\ScoreCardManagement.Common\bin\Debug\net6.0\ScoreCardManagement.Common.pdb
+D:\ScoreCardManagementSystem\src\ScoreCardManagement.Common\obj\Debug\net6.0\ScoreCardManagement.Common.csproj.AssemblyReference.cache
+D:\ScoreCardManagementSystem\src\ScoreCardManagement.Common\obj\Debug\net6.0\ScoreCardManagement.Common.GeneratedMSBuildEditorConfig.editorconfig
+D:\ScoreCardManagementSystem\src\ScoreCardManagement.Common\obj\Debug\net6.0\ScoreCardManagement.Common.AssemblyInfoInputs.cache
+D:\ScoreCardManagementSystem\src\ScoreCardManagement.Common\obj\Debug\net6.0\ScoreCardManagement.Common.AssemblyInfo.cs
+D:\ScoreCardManagementSystem\src\ScoreCardManagement.Common\obj\Debug\net6.0\ScoreCardManagement.Common.csproj.CoreCompileInputs.cache
+D:\ScoreCardManagementSystem\src\ScoreCardManagement.Common\obj\Debug\net6.0\ScoreCardManagement.Common.dll
+D:\ScoreCardManagementSystem\src\ScoreCardManagement.Common\obj\Debug\net6.0\refint\ScoreCardManagement.Common.dll
+D:\ScoreCardManagementSystem\src\ScoreCardManagement.Common\obj\Debug\net6.0\ScoreCardManagement.Common.pdb
+D:\ScoreCardManagementSystem\src\ScoreCardManagement.Common\obj\Debug\net6.0\ScoreCardManagement.Common.genruntimeconfig.cache
+D:\ScoreCardManagementSystem\src\ScoreCardManagement.Common\obj\Debug\net6.0\ref\ScoreCardManagement.Common.dll

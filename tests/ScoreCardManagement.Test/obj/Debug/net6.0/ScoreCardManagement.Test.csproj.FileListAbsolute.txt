@@ -1,0 +1,6 @@
+D:\ScoreCardManagementSystem\tests\ScoreCardManagement.Test\bin\Debug\net6.0\CoverletSourceRootsMapping
+D:\ScoreCardManagementSystem\tests\ScoreCardManagement.Test\obj\Debug\net6.0\ScoreCardManagement.Test.csproj.AssemblyReference.cache
+D:\ScoreCardManagementSystem\tests\ScoreCardManagement.Test\obj\Debug\net6.0\ScoreCardManagement.Test.GeneratedMSBuildEditorConfig.editorconfig
+D:\ScoreCardManagementSystem\tests\ScoreCardManagement.Test\obj\Debug\net6.0\ScoreCardManagement.Test.AssemblyInfoInputs.cache
+D:\ScoreCardManagementSystem\tests\ScoreCardManagement.Test\obj\Debug\net6.0\ScoreCardManagement.Test.AssemblyInfo.cs
+D:\ScoreCardManagementSystem\tests\ScoreCardManagement.Test\obj\Debug\net6.0\ScoreCardManagement.Test.csproj.CoreCompileInputs.cache

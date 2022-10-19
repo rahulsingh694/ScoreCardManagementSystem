@@ -1,0 +1,301 @@
+---
+swagger: '2.0'
+info:
+  title: ScoreCardManagement.WebApi
+  version: v1
+host: 'localhost:7191'
+basePath: "/api"
+
+
+paths:
+  /player:
+    get:
+      tags:
+      - Player
+      parameters:
+      - in: query
+        name: playerId
+        type: integer
+      responses:
+        '200':
+          description: Success
+        '500':
+          description: Internal Server Error
+    post:
+      tags:
+      - Player
+      parameters:
+      - in: body
+        name : body
+        schema :
+          "$ref" : "#/definitions/Player"
+      responses:
+        '200':
+          description: Success
+        '500':
+          description: Internal Server Error
+    put:
+      tags:
+      - Player
+      parameters:
+      - in: query
+        name: playerId
+        type: integer
+      responses:
+        '200':
+          description: Success
+        '500':
+          description: Internal Server Error
+    delete:
+      tags:
+      - Player
+      parameters:
+      - in: query
+        name: playerId
+        type: integer
+      responses:
+        '200':
+          description: Success
+        '500':
+          description: Internal Server Error
+  /player/list:
+    get:
+      tags:
+      - Player
+      responses:
+        '200':
+          description: Success
+        '500':
+          description: Internal Server Error
+          
+  /over:
+    get:
+      tags:
+      - Over
+      parameters:
+      - in: query
+        name: overId
+        type: integer
+      responses:
+        '200':
+          description: Success
+        '500':
+          description: Internal Server Error
+    post:
+      tags:
+      - Over
+      parameters:
+      - in: body
+        name : body
+        schema :
+          "$ref" : "#/definitions/Over"
+      responses:
+        '200':
+          description: Success
+        '500':
+          description: Internal Server Error
+    put:
+      tags:
+      - Over
+      parameters:
+      - in: query
+        name: overId
+        type: integer
+      responses:
+        '200':
+          description: Success
+        '500':
+          description: Internal Server Error
+    delete:
+      tags:
+      - Over
+      parameters:
+      - in: query
+        name: overId
+        type: integer
+      responses:
+        '200':
+          description: Success
+        '500':
+          description: Internal Server Error
+          
+  /over/list:
+    get:
+      tags:
+      - Over
+      responses:
+        '200':
+          description: Success
+        '500':
+          description: Internal Server Error  
+          
+  /team:
+    get:
+      tags:
+      - Team
+      parameters:
+      - in: query
+        name: teamId
+        type: integer
+      responses:
+        '200':
+          description: Success
+        '500':
+          description: Internal Server Error
+    post:
+      tags:
+      - Team
+      parameters:
+      - in: body
+        name : body
+        schema :
+          "$ref" : "#/definitions/Team"
+      responses:
+        '200':
+          description: Success
+        '500':
+          description: Internal Server Error
+    put:
+      tags:
+      - Team
+      parameters:
+      - in: query
+        name: teamId
+        type: integer
+      responses:
+        '200':
+          description: Success
+        '500':
+          description: Internal Server Error
+    delete:
+      tags:
+      - Team
+      parameters:
+      - in: query
+        name: teamId
+        type: integer
+      responses:
+        '200':
+          description: Success
+        '500':
+          description: Internal Server Error
+  /team/list:
+    get:
+      tags:
+      - Team
+      responses:
+        '200':
+          description: Success
+        '500':
+          description: Internal Server Error  
+          
+  /Tournament:
+    get:
+      tags:
+      - Tournament
+      parameters:
+      - in: query
+        name: tournamentId
+        type: integer
+      responses:
+        '200':
+          description: Success
+        '500':
+          description: Internal Server Error
+    post:
+      tags:
+      - Tournament
+      parameters:
+      - in: body
+        name : body
+        schema :
+          "$ref" : "#/definitions/Tournament"
+      responses:
+        '200':
+          description: Success
+        '500':
+          description: Internal Server Error
+    put:
+      tags:
+      - Tournament
+      parameters:
+      - in: query
+        name: tournamentId
+        type: integer
+      responses:
+        '200':
+          description: Success
+        '500':
+          description: Internal Server Error
+    delete:
+      tags:
+      - Tournament
+      parameters:
+      - in: query
+        name: tournamentId
+        type: integer
+      responses:
+        '200':
+          description: Success
+        '500':
+          description: Internal Server Error
+  /tournament/list:
+    get:
+      tags:
+      - Tournament
+      responses:
+        '200':
+          description: Success
+        '500':
+          description: Internal Server Error           
+          
+          
+definitions:
+  Player:
+    type: object
+    properties:
+      playerid:
+        type: integer
+      playername:
+        type: string
+      playerteam:
+        type: string
+      playercountry:
+        type: string
+      playerage:
+        type: integer
+      playertype:
+        type: string
+  Over:
+    type: object
+    properties:
+      overid:
+        type: integer
+      overnumber:
+        type: integer
+      matchid:
+        type: integer
+      inning:
+        type : string
+      run:
+        type: integer
+      wicket:
+       type: integer
+ 
+  Team:
+    type: object
+    properties:
+      teamid:
+         type: integer
+      teamname:
+         type: string
+         
+  Tournament:
+    type: object
+    properties:
+      tournamentid:
+         type: integer
+      tournamenttype:
+         type: string
+      
+        

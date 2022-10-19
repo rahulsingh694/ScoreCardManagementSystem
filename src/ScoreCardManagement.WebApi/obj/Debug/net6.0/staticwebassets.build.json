@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "BgTA3mhx0gdv21hTLr84Wnu4hvuIGxvjQqSpA+r42vQ=",
+  "Source": "ScoreCardManagement.WebApi",
+  "BasePath": "_content/ScoreCardManagement.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

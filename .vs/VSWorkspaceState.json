@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\ScoreCardManagement.Common",
+    "\\src\\ScoreCardManagement.Common\\Data",
+    "\\src\\ScoreCardManagement.Common\\Entities",
+    "\\src\\ScoreCardManagement.Common\\Filters",
+    "\\src\\ScoreCardManagement.Common\\Repository",
+    "\\src\\ScoreCardManagement.Common\\Repository\\Interface",
+    "\\src\\ScoreCardManagement.WebApi",
+    "\\src\\ScoreCardManagement.WebApi\\Controllers"
+  ],
+  "SelectedNode": "\\src\\ScoreCardManagement.WebApi\\Controllers\\UserController.cs",
+  "PreviewInSolutionExplorer": false
+}

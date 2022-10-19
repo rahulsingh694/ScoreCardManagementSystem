@@ -1,0 +1,4 @@
+{
+    "omnisharp.waitForDebugger": true,
+    "git.ignoreLimitWarning": true
+}

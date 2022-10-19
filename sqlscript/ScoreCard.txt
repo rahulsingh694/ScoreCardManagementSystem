@@ -1,0 +1,37 @@
+use ScoreCardDB
+GO
+DROP Table IF Exists Player
+GO
+CREATE TABLE Player(
+        PlayerId int Identity(1, 1) Primary Key,
+        PlayerName varchar(255) not null,
+        PlayerTeam varchar(255) not null,
+        PlayerCountry varchar(50) not null,
+        PlayerAge int not null,
+        PlayerType varchar(50),
+    )
+	
+DROP Table IF Exists Team
+GO
+    CREATE TABLE Team(
+        TeamId int Primary key,
+        TeamName varchar(50) not null,
+    )
+	
+DROP Table IF Exists Tournament
+GO
+    CREATE TABLE Tournament(
+        TournamentId int Primary Key,
+        tournamenttype varchar(50)
+    ) 
+	
+DROP Table IF Exists Over
+GO
+    CREATE TABLE Over(
+        OverId int Identity(1,1) Primary key,
+        OverNumber int not null,
+        MatchId int not null,
+        Inning varchar(50) not null,
+		Run int not null,
+		Wicket int not null
+    )
