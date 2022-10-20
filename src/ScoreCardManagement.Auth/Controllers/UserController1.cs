@@ -25,6 +25,7 @@ namespace ScoreCardManagement.Auth.Controllers
         }
 
         [HttpPost(ApiRoutes.Register)]
+        [AllowAnonymous]
         public async Task<IActionResult> Register([FromBody] UserD request)
         {
             try

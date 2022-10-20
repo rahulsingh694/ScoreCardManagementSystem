@@ -10,7 +10,7 @@ using ScoreCardManagement.Auth.Service.Interface;
 
 namespace ScoreCardManagement.Auth.Controllers
 {
-    [Authorize]
+   // [Authorize]
     [ApiController]
     public class AuthController : ControllerBase
     {
