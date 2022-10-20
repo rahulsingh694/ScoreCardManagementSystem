@@ -22,22 +22,22 @@ namespace ScoreCardManagement.Auth.Service.Implementation
         }
 
          private void CreatePasswordHash(string password, out byte[] passwordHash, out byte[] passwordSalt)
-        {
-         using (var hmac = new HMACSHA512())
          {
-            passwordSalt = hmac.Key;
-            passwordHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
+          using (var hmac = new HMACSHA512())
+          {
+             passwordSalt = hmac.Key;
+             passwordHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
+          }
          }
-        }
 
-    private bool VerifyPasswordHash(string password, byte[] passwordHash, byte[] passwordSalt)
-    {
-        using (var hmac = new HMACSHA512(passwordSalt))
+         private bool VerifyPasswordHash(string password, byte[] passwordHash, byte[] passwordSalt)
         {
+          using (var hmac = new HMACSHA512(passwordSalt))
+         {
             var computedHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
             return computedHash.SequenceEqual(passwordHash);
+         }
         }
-    }
         public async Task<string> Login(UserLogin userLogin)
         {
 
@@ -69,7 +69,19 @@ namespace ScoreCardManagement.Auth.Service.Implementation
 
         }
      
-
+        public async Task<bool> ValidateToken(string token)
+        {
+         try
+         {
+             var secret = configuration.GetSection("AppSettings:Token").Value;
+             var result = Helper.HelperMethod.ValidateToken(token, secret);
+             return result;
+         }
+         catch (Exception ex)
+         {
+             return false;
+         }
+         }
         // public async Task Register(Contracts.User user)
         // {
         //    try

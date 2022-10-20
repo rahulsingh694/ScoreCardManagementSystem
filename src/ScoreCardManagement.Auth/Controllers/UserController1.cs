@@ -12,7 +12,7 @@ using ScoreCardManagement.Common.Filters;
 
 namespace ScoreCardManagement.Auth.Controllers
 {
-    [Authorize]
+   // [Authorize]
     [ApiController]
     public class UserController1 :ControllerBase
     {
@@ -24,7 +24,7 @@ namespace ScoreCardManagement.Auth.Controllers
             // mapper=_mapper;
         }
 
-        [HttpPost(ApiRoutes.Register)]
+        [HttpPost(Routes.ApiRoutes.User.user)]
         [AllowAnonymous]
         public async Task<IActionResult> Register([FromBody] UserD request)
         {
@@ -39,7 +39,7 @@ namespace ScoreCardManagement.Auth.Controllers
             }
         }
          
-        [HttpGet(ApiRoutes.Base)]
+        [HttpGet(Routes.ApiRoutes.User.user)]
         public async Task<ActionResult> GetUserAsync([FromRoute] int userId)
         {
         try
@@ -54,7 +54,7 @@ namespace ScoreCardManagement.Auth.Controllers
 
         }
 
-        [HttpPut(ApiRoutes.Base)]
+        [HttpPut(Routes.ApiRoutes.User.user)]
         public async Task <IActionResult> UpdateUserAsync([FromBody]UserD user)
         {
             try
@@ -68,7 +68,7 @@ namespace ScoreCardManagement.Auth.Controllers
             }
         }
 
-        [HttpDelete(ApiRoutes.Base)]
+        [HttpDelete(Routes.ApiRoutes.User.user)]
         public async Task <IActionResult> DeleteUserAsync([FromRoute] int userId)
         {
             try
@@ -82,7 +82,7 @@ namespace ScoreCardManagement.Auth.Controllers
             }
         }
 
-        [HttpGet(ApiRoutes.allUser)]
+        [HttpGet(Routes.ApiRoutes.User.allUser)]
         public async Task<ActionResult> GetAllUserAsync([FromQuery] UserFilter? userFilter = null)
         {
             try

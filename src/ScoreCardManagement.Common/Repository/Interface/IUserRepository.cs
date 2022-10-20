@@ -14,7 +14,7 @@ namespace ScoreCardManagement.Common.Repository.Interface
         Task UpdateUserAsync(User user);
         Task DeleteUserAsync(int userId);
         Task<List<User>> GetAllUserAsync();
-      //  Task<User> GetUserFromDB(string username);
+        Task<User> GetUserFromDB(string username);
        // Task SaveToDb(User user);
 
     }

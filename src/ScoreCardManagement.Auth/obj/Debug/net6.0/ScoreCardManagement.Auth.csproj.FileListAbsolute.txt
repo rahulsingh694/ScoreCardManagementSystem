@@ -66,3 +66,7 @@ D:\ScoreCardManagementSystem\src\ScoreCardManagement.Auth\obj\Debug\net6.0\Score
 D:\ScoreCardManagementSystem\src\ScoreCardManagement.Auth\obj\Debug\net6.0\ScoreCardManagement.Auth.genruntimeconfig.cache
 D:\ScoreCardManagementSystem\src\ScoreCardManagement.Auth\obj\Debug\net6.0\ref\ScoreCardManagement.Auth.dll
 D:\ScoreCardManagementSystem\src\ScoreCardManagement.Auth\bin\Debug\net6.0\AutoMapper.dll
+D:\ScoreCardManagementSystem\src\ScoreCardManagement.Auth\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\ScoreCardManagementSystem\src\ScoreCardManagement.Auth\bin\Debug\net6.0\Scrutor.dll
+D:\ScoreCardManagementSystem\src\ScoreCardManagement.Auth\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.dll
+D:\ScoreCardManagementSystem\src\ScoreCardManagement.Auth\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll

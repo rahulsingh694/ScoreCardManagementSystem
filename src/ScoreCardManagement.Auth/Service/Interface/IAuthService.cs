@@ -11,5 +11,6 @@ namespace ScoreCardManagement.Auth.Service.Interface
       //  Task Register (UserD user); 
         Task<string> Login (UserLogin userLogin); 
       //  Task<bool> UserExists(string username);
+        Task<bool> ValidateToken(string token);
     }
 }

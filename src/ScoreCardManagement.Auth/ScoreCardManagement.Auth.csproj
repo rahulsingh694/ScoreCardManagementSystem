@@ -15,6 +15,7 @@
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.10" />
     <PackageReference Include="microsoft.entityframeworkcore" Version="6.0.10" />
     <PackageReference Include="microsoft.entityframeworkcore.sqlserver" Version="6.0.10" />
+     <PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="7.0.2" />
   </ItemGroup>
   
    <ItemGroup>

@@ -23,7 +23,7 @@ namespace ScoreCardManagement.Auth.Controllers
         }
 
 
-        [HttpPost(ApiRoutes.Login)]
+        [HttpPost(Routes.ApiRoutes.Auth.Login)]
         public async Task<ActionResult<string>> Login([FromBody] UserLogin request)
         {
             try
@@ -37,7 +37,21 @@ namespace ScoreCardManagement.Auth.Controllers
             }
         }
         
+        [HttpGet(Routes.ApiRoutes.Auth.ValidateToken)]
+        public async Task<IActionResult> ValidateToken(string token)
+        {
 
+         try
+         {
+             var result = await authService.ValidateToken(HttpContext.Request.Headers["Authorization"].FirstOrDefault()?.Split(" ").Last());
+             return Ok(result);
+         }
+         catch (Exception ex)
+         {
+             return BadRequest(ex.Message);
+         }
+
+        }
 
     }
 

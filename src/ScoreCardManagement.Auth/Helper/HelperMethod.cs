@@ -25,6 +25,22 @@ namespace ScoreCardManagement.Auth.Helper
         return $"Token : {jwt} ";
      }
 
+      public static bool ValidateToken(string token, string secret)
+      {
+         var tokenHandler = new JwtSecurityTokenHandler();
+         var key = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(secret));
+         tokenHandler.ValidateToken(token, new TokenValidationParameters
+         {
+             ValidateIssuerSigningKey = true,
+             IssuerSigningKey = key,
+             ValidateIssuer = false,
+             ValidateAudience = false
+         }, out SecurityToken validatedToken);
+         var jwtToken = (JwtSecurityToken)validatedToken;
+        
+         return true;
+      }
+
     public static async Task<string> PasswordHasher(string password)
     {
         return await Task.Run(() => BCrypt.Net.BCrypt.HashPassword(password, 12));
