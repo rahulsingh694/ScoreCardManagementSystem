@@ -73,8 +73,8 @@ namespace ScoreCardManagement.Auth.Controllers
         {
             try
             {
-            await userService.DeleteUserAsync(userId);
-            return Ok();
+             await userService.DeleteUserAsync(userId);
+             return Ok();
             }
             catch(Exception ex)
             {

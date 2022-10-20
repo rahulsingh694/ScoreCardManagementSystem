@@ -6,6 +6,7 @@ using ScoreCardManagement.Auth.Contracts;
 using ScoreCardManagement.Auth.Service.Interface;
 using AutoMapper;
 using ScoreCardManagement.Common.Filters;
+using ScoreCardManagement.Common.Entities;
 
 namespace ScoreCardManagement.Auth.Service.Implementation
 {
@@ -19,7 +20,7 @@ namespace ScoreCardManagement.Auth.Service.Implementation
           //  mapper = _mapper;
         }
 
-        public async Task RegisterUserAsync(Contracts.UserD user)
+        public async Task RegisterUserAsync(UserD user)
         {
             try
             {
@@ -55,7 +56,7 @@ namespace ScoreCardManagement.Auth.Service.Implementation
             } 
         }
 
-        public async Task<List<Common.Entities.User>> GetAllUserAsync()
+        public async Task<List<User>> GetAllUserAsync()
         {
             
             try
@@ -68,7 +69,7 @@ namespace ScoreCardManagement.Auth.Service.Implementation
             }  
         }
 
-        public async Task<Common.Entities.User> GetUserAsync(int userId)
+        public async Task<User> GetUserAsync(int userId)
         {
             try
             {
@@ -83,7 +84,7 @@ namespace ScoreCardManagement.Auth.Service.Implementation
             } 
         }
 
-        public async Task UpdateUserAsync(Common.Entities.User user)
+        public async Task UpdateUserAsync(User user)
         {
             try
             {
@@ -100,14 +101,29 @@ namespace ScoreCardManagement.Auth.Service.Implementation
             throw new NotImplementedException();
         }
 
+        public Task UpdateUserAsync(UserD user)
+        {
+            throw new NotImplementedException();
+        }
+
         Task<List<UserD>> IUserService.GetAllUserAsync()
         {
             throw new NotImplementedException();
         }
 
-        public Task UpdateUserAsync(UserD user)
-        {
-            throw new NotImplementedException();
-        }
+        // Task<UserD> IUserService.GetUserAsync(int userId)
+        // {
+        //     throw new NotImplementedException();
+        // }
+
+        // Task<List<UserD>> IUserService.GetAllUserAsync()
+        // {
+        //     throw new NotImplementedException();
+        // }
+
+        // public Task UpdateUserAsync(UserD user)
+        // {
+        //     throw new NotImplementedException();
+        // }
     }
 }
