@@ -39,12 +39,12 @@ namespace ScoreCardManagement.Auth.Controllers
             }
         }
          
-        [HttpGet(Routes.ApiRoutes.User.user)]
-        public async Task<ActionResult> GetUserAsync([FromRoute] int userId)
+        [HttpGet(Routes.ApiRoutes.User.userbyid)]
+        public async Task<ActionResult> GetUserAsync([FromRoute] int id)
         {
         try
          {
-          var user = await userService.GetUserAsync(userId);
+          var user = await userService.GetUserAsync(id);
           return Ok(user);
          }
          catch(Exception ex)
@@ -59,7 +59,7 @@ namespace ScoreCardManagement.Auth.Controllers
         {
             try
             {
-            await userService.UpdateUserAsync(user);
+         //   await userService.UpdateUserAsync(user);
              return Ok();
             }
             catch(Exception ex)

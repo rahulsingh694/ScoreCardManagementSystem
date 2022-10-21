@@ -12,6 +12,7 @@ namespace ScoreCardManagement.Auth.Routes
         {
             public const string user = Base + "/user";
             public const string allUser = Base + "/user/list";
+            public const string userbyid=Base+"/user/{id}";
         }
         
         public static class Auth

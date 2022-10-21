@@ -38,7 +38,7 @@ namespace ScoreCardManagement.Auth.Controllers
         }
         
         [HttpGet(Routes.ApiRoutes.Auth.ValidateToken)]
-        public async Task<IActionResult> ValidateToken(string token)
+        public async Task<IActionResult> ValidateToken()
         {
 
          try

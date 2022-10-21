@@ -84,46 +84,20 @@ namespace ScoreCardManagement.Auth.Service.Implementation
             } 
         }
 
-        public async Task UpdateUserAsync(User user)
-        {
-            try
-            {
-             await userRepository.UpdateUserAsync(user);
-            }
-            catch(System.Exception ex)
-            {
-             throw new Exception("User details not updated", ex.InnerException);
-            } 
-        }
-
-        Task<UserD> IUserService.GetUserAsync(int userId)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task UpdateUserAsync(UserD user)
-        {
-            throw new NotImplementedException();
-        }
-
-        Task<List<UserD>> IUserService.GetAllUserAsync()
-        {
-            throw new NotImplementedException();
-        }
-
-        // Task<UserD> IUserService.GetUserAsync(int userId)
+        // public async Task UpdateUserAsync(UserD user)
         // {
-        //     throw new NotImplementedException();
+        //     try
+        //     {
+        //      await userRepository.UpdateUserAsync(user);
+        //     }
+        //     catch(System.Exception ex)
+        //     {
+        //      throw new Exception("User details not updated", ex.InnerException);
+        //     } 
         // }
 
-        // Task<List<UserD>> IUserService.GetAllUserAsync()
-        // {
-        //     throw new NotImplementedException();
-        // }
+    
 
-        // public Task UpdateUserAsync(UserD user)
-        // {
-        //     throw new NotImplementedException();
-        // }
+        
     }
 }
